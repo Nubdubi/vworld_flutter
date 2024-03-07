@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VWorld Map Example</title>
+    <script
+      type="text/javascript"
+      src="https://map.vworld.kr/js/vworldMapInit.js.do?version=2.0&apiKey={API_KEY}"
+    ></script>
+  </head>
+  <body>
+    <div id="vworldMap" style="width: 100%; height: 100%"></div>
+    <script>
+      var map;
+      function init() {
+        map = new vworld.Map("vworldMap", {
+          basemapType: vworld.BasemapType.BASE,
+          controlDensity: vworld.ControlDensity.BASIC,
+          interactionDensity: vworld.InteractionDensity.BASIC,
+        });
+        map.centerAndZoom(new vworld.LatLng(37.5666791, 126.9782914), 8);
+      }
+      window.onload = init;
+    </script>
+  </body>
+</html>
