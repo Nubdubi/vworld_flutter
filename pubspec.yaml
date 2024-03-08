@@ -1,6 +1,6 @@
 name: vwolrd_flutter
 description: "대한민국 정부에서 제공하는 한국 전용 지도인 vworld를 flutter 에서 사용이 가능하도록 제작되었습니다."
-version: 0.0.1
+version: 0.0.2
 homepage: null
 
 environment:
